@@ -1,6 +1,11 @@
-spring.datasource.url=jdbc:mysql://localhost:3306/myproject
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myproject
+    username: root
+    password: anup
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-spring.datasource.username=root
-spring.datasource.password=anup
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
